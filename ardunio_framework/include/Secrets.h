@@ -1,10 +1,10 @@
 #include <pgmspace.h>
  
 #define SECRET
-#define THINGNAME "QTBin"                         
+#define THINGNAME ""                         
 
-const char WIFI_SSID[] = "Verizon_J9SPGP";            
-const char WIFI_PASSWORD[] = "cab3-azure-plot";           
+const char WIFI_SSID[] = "";            
+const char WIFI_PASSWORD[] = "";           
 
 const char AWS_IOT_ENDPOINT[] = "";
 
