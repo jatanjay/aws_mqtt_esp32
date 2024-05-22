@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wi-Fi Manager | Turn Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="/logo.png" alt="Turn Logo" style="max-width: 200px;">
+  </header>
+  <div class="content">
+    <div class="card-grid">
+      <div class="card" id="form-card">
+        <form action="/" method="POST" id="wifi-form">
+          <p>
+            <label for="ssid">SSID</label>
+            <input type="text" id="ssid" name="ssid"><br>
+            <label for="pass">Password</label>
+            <input type="text" id="pass" name="pass"><br>
+            <input type="submit" value="Submit" id="submit-btn">
+          </p>
+        </form>
+        <p id="message" style="display: none;">New SSID/Password Added! Restarting...</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p id="footer-message">&copy; 2024 QuireTech. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  document.getElementById("wifi-form").addEventListener("submit", function (event) {
+    var formCard = document.getElementById("wifi-form");
+    var message = document.getElementById("message");
+    formCard.style.display = "none";
+    message.style.display = "block";
+  });
+</script>
+
+</html>
