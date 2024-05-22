@@ -34,12 +34,7 @@ private:
     String MAC_ADDR =  WiFi.macAddress();
 
     struct Configuration
-    // {
-    //     String defaultSSID = "The Goblin Warren";
-    //     String defaultPassword = "yellowwhale161";
-    //     String defaultWebUser = "turnsystems";
-    //     String defaultWebPassword = "ts001";
-    // };
+
     {
         String AP_MODE_SSID = "TurnSystemsMgr";
         String AP_MODE_PASS = "turnsys123";
